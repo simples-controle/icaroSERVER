@@ -108,24 +108,18 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- Sidebar user panel -->
-      
-
-      
-
-      <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+            <i class="fa fa-cog"></i> <span>Services and Proccess</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
           <ul class="treeview-menu">
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="?act=services.services.show"><i class="fa fa-circle-o"></i> Services</a></li>
+            <li><a href="?act=services.proccess.show"><i class="fa fa-circle-o"></i> Proccess</a></li>
           </ul>
         </li>
-        
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -146,6 +140,21 @@
 
     <!-- Main content -->
     <section class="content">
+
+        <?php 
+        foreach ($this->flash as $value) :
+          //var_dump($value);
+          ?>  
+          <div class="alert alert-<?=$value['type']?> alert-dismissible" role="alert">
+            <span class="fa fa-fw fa-bell"></span>
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">X</button>
+            <?=$value['msg']?>
+          </div>
+          <?php 
+        endforeach 
+        ?>
+
+
         {{[content]}}
     </section>
     <!-- /.content -->

@@ -1,3 +1,6 @@
+<?php
+$this->title = 'Show Services';
+?>
 <div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title"> <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Services</h3>
@@ -8,7 +11,7 @@
 						<tr>
 							<th>Service</th>
 							<th>Status</th>
-							<th>Actions</th>
+							<th width="120px;">Actions</th>
 						</tr>	
 					</thead>    
 					<tbody>
@@ -22,20 +25,20 @@
 									<td>
 										
 										<?php if( $model->status == 'stoped' ):?>
-											<button type="button" class="btn btn-success">
+											<a  href="?act=services.services.start&service=<?=$model->name?>" class="btn btn-success">
 												<span class="glyphicon glyphicon-play"></span>
-											</button>
+											</a>
 										<?php endif ?>
 
+										<?php if( $model->status == 'runing' ):?>
+											<a href="?act=services.services.stop&service=<?=$model->name?>" class="btn btn-danger">
+												<span class="glyphicon glyphicon-stop"></span>
+											</a>
 
-										<button type="button" class="btn btn-danger">
-											<span class="glyphicon glyphicon-stop"></span>
-										</button>
-
-
-										<button type="button" class="btn btn-warning">
-											<span class="glyphicon glyphicon-refresh"></span>
-										</button>
+											<a href="?act=services.services.restart&service=<?=$model->name?>" class="btn btn-warning">
+												<span class="glyphicon glyphicon-refresh"></span>
+											</a>
+										<?php endif ?>
 
 									</td>
 									
@@ -47,8 +50,7 @@
 				</table>
 			</div>
 			<div class="panel-footer">
-			<button type="button" class="btn btn-default" aria-label="Left Align">
-			  	<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Manager Services
-			</button>
+			
+			
 			</div>
 		</div>

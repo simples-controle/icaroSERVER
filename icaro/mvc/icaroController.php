@@ -10,6 +10,8 @@ class icaroController
 	public $template = 'main';
 	public $viewPath = '//views//';
 
+	private $flash = array();
+
 	public function render($view = '', $arrParam)
 	{
 		$view =  str_replace("\\", "/", $this->viewPath . '/' . $view.'.php');
@@ -33,5 +35,25 @@ class icaroController
 		echo $view;
         echo $template[1];
 	}
+
+	public function redirect($url)
+	{
+		header( 'locate: ' . $url );
+		exit;
+	}
+
+	public function setFlash($type, $msg)
+	{
+		$this->flash[] = array('type' => $type, 'msg' => $msg);
+		
+	}
+
+	public function getFlash()
+	{
+		return $this->flash;
+	}
+
+
+
 	
 }

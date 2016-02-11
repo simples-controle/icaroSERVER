@@ -1,7 +1,7 @@
 <?php 
 namespace icaro\modules\services\models;
 
-/**
+/*
 * 
 */
 class servicesDEBIAN implements servicesINTERFACE
@@ -30,9 +30,24 @@ class servicesDEBIAN implements servicesINTERFACE
 		return $dataSet;
 	}
 
+	/*
+	* 
+	*/
 	public function stop($serviceName){
-		$console = shell_exec( 'sudo service apache2 stop' ) ;
-		echo '<pre>';
-		var_dump( $console );
+		return shell_exec( 'sudo service '.$serviceName.' stop' ) ;
+	}
+
+	/*
+	* 
+	*/
+	public function start($serviceName){
+		return shell_exec( 'sudo service '.$serviceName.' start' ) ;
+	}
+
+	/*
+	* 
+	*/
+	public function restart($serviceName){
+		return shell_exec( 'sudo service '.$serviceName.' restart' ) ;
 	}
 }

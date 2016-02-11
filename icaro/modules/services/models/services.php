@@ -25,4 +25,14 @@ class services extends icaroModel
 	{
 		return $this->modelImplements->stop($service);
 	}
+
+	public function start($service)
+	{
+		return $this->modelImplements->start($service);
+	}
+
+	public function restart($service)
+	{
+		return $this->modelImplements->restart($service);
+	}
 }
