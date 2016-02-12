@@ -18,3 +18,4 @@ pronto!
 # módulos #
   -  gerenciador de arquivos
   -  hardware dashboard
+  -  network administration
