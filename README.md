@@ -16,4 +16,5 @@ pronto!
 
 
 # módulos #
-  -  Módulo gerenciador de arquivos
+  -  gerenciador de arquivos
+  -  hardware dashboard
