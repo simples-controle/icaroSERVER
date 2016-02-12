@@ -17,9 +17,14 @@ pronto!
 
 # módulos #
 
- * BASIC
+ * BASIC ---------------------------
 
   -  gerenciador de arquivos
   -  hardware dashboard
   -  network administration
   -  system options
+
+ * NETWORKER -----------------------
+
+
+ *
