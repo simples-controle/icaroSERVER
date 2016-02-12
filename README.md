@@ -16,6 +16,9 @@ pronto!
 
 
 # módulos #
+
+ * BASIC
+
   -  gerenciador de arquivos
   -  hardware dashboard
   -  network administration
