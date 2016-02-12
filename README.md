@@ -10,6 +10,6 @@ Estamos em processo de desenvolvimento não recomendado o uso o icaroSERVER em p
 
 Clonar o repo em um ambiente LINUX + APACHE2
 
-Rodar composer update no pasta do projeto clonado
+Rodar composer update no pasta do projeto clonado (ou sudo composer update - caso necessário)
 
 pronto!
