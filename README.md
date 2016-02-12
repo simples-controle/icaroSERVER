@@ -21,7 +21,7 @@ pronto!
 
   -  gerenciador de arquivos
   -  hardware dashboard
-  -  network administration
+  -  network administration ( low level )
   -  system options
 
  * NETWORKER -----------------------
