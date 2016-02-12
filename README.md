@@ -16,5 +16,4 @@ pronto!
 
 
 # módulos #
-Módulo gerenciador de arquivos:
-- tópicos:
+  -  Módulo gerenciador de arquivos
