@@ -13,3 +13,7 @@ Clonar o repo em um ambiente LINUX + APACHE2
 Rodar composer update no pasta do projeto clonado (ou sudo composer update - caso necessário)
 
 pronto!
+
+
+Módulo gerenciador de arquivos:
+- tópicos:
