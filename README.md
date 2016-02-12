@@ -19,3 +19,4 @@ pronto!
   -  gerenciador de arquivos
   -  hardware dashboard
   -  network administration
+  -  system options
