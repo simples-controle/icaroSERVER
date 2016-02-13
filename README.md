@@ -16,7 +16,7 @@ pronto!
 
 
 
-###  módulos atuais ### 
+###  módulos atuais
 
 Abaixo os módulos atuais o status de cada um deles. 
 
@@ -29,7 +29,7 @@ Informações  e gerenciamento de serviços e processos, podendo listar, matar p
 - System - Em implementação
 Informações do sistema e do hardwares além do gerenciamento de configurações como data e hora, lingua, permissões em pastas, etc.
 
-### Módulos futuros ###
+### Módulos futuros
 
 - Network - A fazer
 Informações e diagnosticos de rede, configurar placas de redes, acessos a redes sem fio, rcomparilhar a internet em forma de rotador NAT entre placas, definir limite de banda por IP ou MAC, etc.
