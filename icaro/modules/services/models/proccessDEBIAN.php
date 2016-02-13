@@ -8,26 +8,26 @@ class proccessDEBIAN implements proccessINTERFACE
 {
 	public function show()
 	{
-		$console = explode('||', shell_exec('sudo ps -eo "%C; %G; %P; %U; %a; %c; %g; %x ||" --no-headers'));
-		
+		$console = explode('||', shell_exec('ps axo "%u , %p , %a , %C, %z , %t || " --sort %mem '));
+		//var_dump($console);
 		$dataSet = array();
 		foreach ($console as $key => $value) 
 		{
 			if ( trim( $value ) != '' )
 			{
-				$value = explode(';',  $value );
+				$value = explode(',',  $value );
 				
 				$proccessMODEL = new proccessMODEL;
-				$proccessMODEL->user = trim($value[3]);
-				$proccessMODEL->pid = trim($value[2]);
-				$proccessMODEL->cpuUsage = trim($value[0]);
+				$proccessMODEL->user = trim($value[0]);
+				$proccessMODEL->pid = trim($value[1]);
+				$proccessMODEL->command = trim($value[2]);
+				$proccessMODEL->cpuUsage = trim($value[3]);
 				
-				$proccessMODEL->command = trim($value[5]);
 				
 				$dataSet[] = $proccessMODEL;
 			}	
 		}
-		var_dump($dataSet);
+		//var_dump($dataSet);
 		return $dataSet;
 	}
 

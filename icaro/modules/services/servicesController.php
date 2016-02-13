@@ -40,6 +40,7 @@ class servicesController extends icaroController
 		$services = new services;
 		if ( ($restartService = $services->restart( $_REQUEST['service'] )) != "" ){
 			$this->setFlash('success', 'Service '. $_REQUEST['service'] . ' ' . $restartService);
+			$this->setFlash('info', 'Hey the service restarted successul!');
 		}else{
 			$this->setFlash('danger', 'Service '. $_REQUEST['service'] . ' dont restarted!');
 		}

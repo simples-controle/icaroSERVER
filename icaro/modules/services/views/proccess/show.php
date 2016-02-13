@@ -73,3 +73,49 @@ $lava->GaugeChart('memUsage', $memDataTable, [
 		</div>
 	</div>
 </div>
+
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="panel panel-default">
+		<div class="panel-heading">
+			<h3 class="panel-title"> 
+				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 
+				Proccess
+			</h3>
+		</div>
+		<div class="panel-body">
+			<table class="table">
+	<thead>
+		<tr>
+			<th>User</th>
+			<th>PID</th>
+			<th>Cmd</th>
+			<th>% CPU</th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php 
+		foreach ($proccess as $model) {
+			?>
+			<tr>
+				<td><?=$model->user?></td>
+				<td><?=$model->pid?></td>
+				<td><?=$model->command?></td>
+				<td><?=$model->cpuUsage?></td>
+				
+			</tr>
+			<?php
+		}
+		?>
+	</tbody>
+</table>
+		</div>
+		<div class="panel-footer">
+		</div>
+		</div>
+	</div>
+
+	
+</div>
+
