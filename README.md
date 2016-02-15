@@ -1,6 +1,10 @@
-# README #
+# icaroSERVER #
 
 icaroSERVER é um painel de administração Linux baseado na usabilidade e praticidade para pequenas e médias empresas em manter serviços sobre Linux.
+
+Sua interface web flat, responsiva e focada na usabilidade extrema garante um amigável e confiavel painel de gestão para servidores linux.
+
+Usando o icaroSERVER pode-se por exemplo administrar configurações do sistema, redes, discos e compartilhamentos, sites apache2 (php, rails, python), bancos mysql e postgress, gerenciar usuários, grupos e permissões e muito, muito mais!
 
 ### Versão atual ###
 
@@ -8,15 +12,23 @@ Estamos em processo de desenvolvimento não recomendado o uso o icaroSERVER em p
 
 ### Como instalar ###
 
-Clonar o repo em um ambiente LINUX + APACHE2
+Clonar o repo em um ambiente UBUNTUN + APACHE2
 
 Rodar composer update no pasta do projeto clonado (ou sudo composer update - caso necessário)
 
 pronto!
 
+### Contribuir ###
 
+Contribuições via issues reportando erros, melhorias e novas funcionalidades ou como Pull Request propondo mudanças já implementadas.
 
-###  módulos atuais
+Testadores são bem vindos, como reporters de erros, neste caso informar sempre qual distro e versão usada no teste bem como versão do apache e do PHP.
+
+###  Distribuições Suportadas atualmente
+
+- Ubutun Server
+
+###  Módulos atuais
 
 Abaixo os módulos atuais o status de cada um deles. 
 
