@@ -7,13 +7,13 @@ namespace icaro\modules\system\models;
 */
 interface systemINTERFACE 
 {
+	public function hostname();
 	
-	public function kernelName();
 	public function kernelRelease();
 	public function kernelVersion();
 
-	public function nodeName();
+	public function operatingSystem();
 
-	public function proccessorType();
+	public function hardwarePlataform();
 	
 }

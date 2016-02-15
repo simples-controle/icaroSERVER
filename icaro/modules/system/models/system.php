@@ -16,25 +16,30 @@ class system extends icaroModel
 		$this->modelImplements = new $implements;
 	}
 
-	public function show()
+	public function hostname()
 	{
-		return $this->modelImplements->show();
+		return $this->modelImplements->hostname();
+	}
+
+	public function kernelRelease()
+	{
+		return $this->modelImplements->kernelRelease();
+	}
+
+	public function kernelVersion()
+	{
+		return $this->modelImplements->kernelVersion();
+	}
+
+	public function operatingSystem()
+	{
+		return $this->modelImplements->operatingSystem();
+	}
+
+	public function hardwarePlataform()
+	{
+		return $this->modelImplements->hardwarePlataform();
 	}
 	
-	public function cpuUsage()
-	{
-		return $this->modelImplements->cpuUsage();
-	}
-
-	public function memTotal()
-	{
-		return $this->modelImplements->memTotal();
-	}
-
-	public function memFree()
-	{
-		return $this->modelImplements->memFree();
-	}
-
 
 }

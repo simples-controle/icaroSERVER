@@ -7,10 +7,16 @@ use icaro\modules\system\models\system;
 
 class systemController extends icaroController
 {
-	function index()
+	function show()
 	{	
 		$system = new system;
 		
-		//$this->render('index', array('listServices' => $listServices));
+		$this->render('show', array(
+				'hostname' => $system->hostname(),
+				'kernelRelease' => $system->kernelRelease(),
+				'kernelVersion' => $system->kernelVersion(),
+				'operatingSystem' => $system->operatingSystem(),
+				'hardwarePlataform' => $system->hardwarePlataform()
+			));
 	}
 }

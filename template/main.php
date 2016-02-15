@@ -111,7 +111,25 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="active treeview">
+        <li class=" treeview">
+          
+          <a href="#">
+            <i class="fa fa-cog"></i> <span>System</span> <i class="fa fa-angle-left pull-right"></i>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="?act=system.system.show"><i class="fa fa-circle-o"></i>Sistema</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Hardware</a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i>Gerenciar Pacotes</a></li>
+
+          </ul>
+
+
+        </li>
+
+        <li class=" treeview">
+          
+          
+
           <a href="#">
             <i class="fa fa-cog"></i> <span>Services and Proccess</span> <i class="fa fa-angle-left pull-right"></i>
           </a>
@@ -119,7 +137,10 @@
             <li><a href="?act=services.services.show"><i class="fa fa-circle-o"></i> Services</a></li>
             <li><a href="?act=services.proccess.show"><i class="fa fa-circle-o"></i> Proccess</a></li>
           </ul>
+
         </li>
+
+
       </ul>
     </section>
     <!-- /.sidebar -->
