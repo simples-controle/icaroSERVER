@@ -11,11 +11,23 @@ class icaroRouter
   private $module;
   private $controller;
   private $method;
+  private $config;
+
+  public function __construct()
+  {
+    // config
+    $icaroConfig = file_get_contents("icaro.config");
+    $this->config = json_decode($icaroConfig, false);
+  }
 
   public function run($command)
   {
     try {
       
+      if ($command == ''){
+        $command = $this->config->actDefault;
+      } 
+
       $act = explode('.', $command);
 
       $this->module     = $act[0];

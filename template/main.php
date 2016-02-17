@@ -118,9 +118,7 @@
           </a>
           <ul class="treeview-menu">
             <li><a href="?act=system.system.show"><i class="fa fa-circle-o"></i>Sistema</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Hardware</a></li>
-            <li><a href="#"><i class="fa fa-circle-o"></i>Gerenciar Pacotes</a></li>
-
+          
           </ul>
 
 
