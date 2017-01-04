@@ -33,7 +33,7 @@ class proccessDEBIAN implements proccessINTERFACE
 
 	public function cpuUsage()
 	{
-		$cpuUsage = shell_exec("sudo ps aux | awk {'sum+=$3;print sum'} | tail -n 1");
+		$cpuUsage = shell_exec("ps aux | awk {'sum+=$3;print sum'} | tail -n 1");
 		if ($cpuUsage == ""){
 			return 0;
 		}

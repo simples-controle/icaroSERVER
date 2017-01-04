@@ -34,20 +34,20 @@ class servicesDEBIAN implements servicesINTERFACE
 	* 
 	*/
 	public function stop($serviceName){
-		return shell_exec( 'sudo service '.$serviceName.' stop' ) ;
+		return shell_exec( 'service '.$serviceName.' stop' ) ;
 	}
 
 	/*
 	* 
 	*/
 	public function start($serviceName){
-		return shell_exec( 'sudo service '.$serviceName.' start' ) ;
+		return shell_exec( 'service '.$serviceName.' start' ) ;
 	}
 
 	/*
 	* 
 	*/
 	public function restart($serviceName){
-		return shell_exec( 'sudo service '.$serviceName.' restart' ) ;
+		return shell_exec( 'service '.$serviceName.' restart' ) ;
 	}
 }

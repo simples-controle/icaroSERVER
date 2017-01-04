@@ -40,6 +40,23 @@ class system extends icaroModel
 	{
 		return $this->modelImplements->hardwarePlataform();
 	}
+
+
+	public function cpuName()
+	{
+		return $this->modelImplements->cpuName();
+	}	
+
+	public function motherboardName()
+	{
+		return $this->modelImplements->motherboardName();
+	}
+
+	public function manufacturerName()
+	{
+		return $this->modelImplements->manufacturerName();
+	}	
+
 	
 
 }

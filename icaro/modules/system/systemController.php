@@ -12,11 +12,7 @@ class systemController extends icaroController
 		$system = new system;
 		
 		$this->render('show', array(
-				'hostname' => $system->hostname(),
-				'kernelRelease' => $system->kernelRelease(),
-				'kernelVersion' => $system->kernelVersion(),
-				'operatingSystem' => $system->operatingSystem(),
-				'hardwarePlataform' => $system->hardwarePlataform()
+				'model' => $system
 			));
 	}
 }

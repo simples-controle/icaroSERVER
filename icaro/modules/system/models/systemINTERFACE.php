@@ -16,4 +16,8 @@ interface systemINTERFACE
 
 	public function hardwarePlataform();
 	
+	public function cpuName();
+	public function motherboardName();
+	public function manufacturerName();
+	
 }
